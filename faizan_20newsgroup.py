@@ -127,11 +127,3 @@ if len(dynamic_topics) > 0:
 else:
     st.warning("No topic assignments available.")
 
-# --- Optional: Load saved plot image ---
-st.subheader("Top 20 Words (Pre-Saved Plot)")
-plot_path = "C:/Users/Faizan/Desktop/csi_proj/newsgroupplots/top_20_words.png"
-if os.path.exists(plot_path):
-    img = Image.open(plot_path)
-    st.image(img, use_column_width=True)
-else:
-    st.warning("Top 20 Words plot not found at the specified path.")
