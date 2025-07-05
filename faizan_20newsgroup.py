@@ -87,7 +87,7 @@ except Exception as e:
     st.error(f"Error loading documents: {e}")
 
 # --- t-SNE Visualization ---
-st.subheader("t-SNE Visualization (Optional Topic Filter)")
+st.subheader("t-SNE Visualization")
 filter_topic = st.selectbox("Filter by Topic", [None] + list(range(n_components)), format_func=lambda x: topic_labels[x] if x is not None else "All")
 
 try:
